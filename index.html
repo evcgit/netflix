@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
 </head>
-<body class="bg-[url('./images/background.jpg')] bg-cover">
-    <div class="w-fit h-fit py-3 px-2 rounded-3xl bg-slate-400">
+<body class="bg-[url('./images/background.jpg')] bg-cover flex items-center h-screen">
+    <div class="w-fit h-fit py-3 px-2 rounded-3xl backdrop-blur-2xl">
         <ul>
             <li><i class="fa fa-lg fa-play-circle-o text-white bg-red-600 rounded-2xl p-2" aria-hidden="true"></i></li>
             <li><i class="fa fa-lg p-2 fa-th-large text-white mt-1.5" aria-hidden="true"></i></li>
@@ -18,9 +18,54 @@
             <li><i class="fa fa-lg p-2 fa-search text-white mt-1.5" aria-hidden="true"></i></li>
         </ul>
     </div>
-    <div>
-        <div></div>
-        <div></div>
+    <div class="flex items-center w-5/6">
+        <div class="w-1/5">
+            <h1 class="text-red-600 font-bold text-5xl mb-12">NETFLIX</h1>
+            <ul class="list-group">
+                <li class="list-group-item text-white mt-2"><i class="fa fa-play-circle text-red-600" aria-hidden="true"></i>  Browse</li>
+                <li class="list-group-item text-white mt-2 opacity-70"><i class="fa fa-heart-o" aria-hidden="true"></i>  Wishlist</li>
+                <li class="list-group-item text-white mt-2 opacity-70"><i class="fa fa-calendar" aria-hidden="true"></i>  Coming Soon</li>
+            </ul>
+            <div class="mt-12">
+                <h3 class="text-white text-3xl">New Trailers</h3>
+                <div class="bg-[url('./images/shadowandbone.jpg')] h-40 w-60 bg-cover rounded-2xl mt-6 relative">
+                    <div class="backdrop-blur-2xl bg-white/30 p-1 flex justify-around items-center absolute bottom-0 w-full rounded-b-lg">
+                        <span class="text-white text-xl">Shadow and Bone</span>
+                        <i class="fa fa-lg fa-play-circle text-white" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="bg-[url('./images/nightagent.jpg')] h-40 w-60 bg-cover rounded-2xl mt-6 relative">
+                    <div class="backdrop-blur-2xl bg-white/30 p-1 flex justify-around items-center absolute bottom-0 w-full rounded-b-lg">
+                        <span class="text-white text-xl">The Night Agent</span>
+                        <i class="fa fa-lg fa-play-circle text-white" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="bg-[url('./images/witcher.jpg')] h-40 w-60 bg-cover rounded-2xl mt-6 relative">
+                    <div class="backdrop-blur-2xl bg-white/30 p-1 flex justify-around items-center absolute bottom-0 w-full rounded-b-lg">
+                        <span class="text-white text-xl">The Witcher</span>
+                        <i class="fa fa-lg fa-play-circle text-white" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-4/5">
+            <div class="flex justify-between mb-6">
+                <div>
+                    <span class="text-4xl text-gray-700">	&lt; </span> <span class="text-white text-4xl"> &gt; </span>
+                    <input type="text" placeholder=" Search..." class="bg-zinc-800 pr-36 pl-3 py-2.5 text-2xl rounded-3xl ml-8"> 
+                </div>
+                <div>
+                    <i class="fa fa-bell-o text-white fa-lg p-4 bg-zinc-800 opacity-75 rounded-3xl" aria-hidden="true"></i>
+                    <span class="bg-zinc-800 p-3 rounded-2xl opacity-75"> <i class="fa fa-user text-white fa-lg" aria-hidden="true"> Evan C.</i></span>
+                </div>
+            </div>
+            <div class="bg-[url('./images/peakyblinders.jpg')] h-96 w-full bg-cover rounded-2xl">
+                <button class="py-2 px-5 text-white bg-red-600 rounded-2xl">Watch</button>
+                <button class="text-white text-2xl pb-1.5 px-2.5 backdrop-blur-2xl rounded-2xl">+</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
